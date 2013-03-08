@@ -1,0 +1,104 @@
+/* Blocks and structure */
+
+@page{
+	orphans:4;
+	widows:2;
+}
+
+p, li, .block, .aside{
+	page-break-inside:avoid;
+}
+
+.block{
+	display:block;
+	clear:both;
+}
+
+
+/* Typography */
+
+body{
+	font-family: 'Eras Medium ITC';
+	font-size:12px;
+	line-height:1.3em;
+	padding-left:25px;
+	padding-right:10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+
+h1, h2, h3{
+	position: relative;
+	margin-left: -25px;
+}
+
+h1{
+	font-size:43px;
+	padding-top:0;
+	margin-top:0;
+	line-height:1em;
+	margin-bottom:0.3em;
+	padding-bottom:0em;
+	text-align:center;
+}
+
+h2{
+	font-size:24px;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	margin-top:1.4em;
+	border-bottom:1px solid #ccc;
+}
+
+h3{
+	font-size:18px;
+}
+
+h4{
+	font-size:16px;
+	margin: 0.5em 0;
+}
+
+p{
+	text-align: justify;
+}
+
+li{
+	text-align: justify;
+	padding-right:40px;
+}
+
+a{
+	color:#444;
+}
+
+
+/* Asides */
+
+.aside{
+	float:right;
+	width:184px;
+	background-color:#eee;
+	margin: 0 0 4px 20px;
+	padding: 6px 14px;
+	overflow:hidden;
+}
+.aside h1, .aside h2, .aside h3{
+	margin-left: 0px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.aside ul{
+	padding-left:18px;
+}
+.aside li{
+	padding-right:0px;
+}
+
+.aside blockquote{
+	padding:0;
+	margin:0;
+	text-indent: 1em;
+}
