@@ -63,7 +63,7 @@ You can tackle the issue in two different ways.
 - specifically request page breaks where needed (not recommended)
 - define places where you don't want a page break, and let the normal flow find the right spots
 
-For the first method, you can could use custom tags in your markdown like this:
+For the first method, you could use custom tags in your markdown like this:
 
 	[page-break/]
 
@@ -88,5 +88,4 @@ Then this line of CSS ensure everything in the block will hang together:
 	p, li, .block, .aside{
 		page-break-inside:avoid;
 	}
-
 
