@@ -2,6 +2,8 @@
 
 Versioned CV is an attempt to write CVs using Markdown syntax, versioned using Git, automatically built into PDFs.
 
+**Warning:** I wrote this code just for my personal use. Feel free to use it, but don't expect it to be well tested or even near to a beta version. 
+
 ## Install
 
 ### Install GEM dependencies:
