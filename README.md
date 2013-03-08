@@ -48,10 +48,45 @@ You can mark blocks of content with the following syntax:
 	
 	** Some content
 	
-	[/myblock/
+	[/myblock]
 	
 The build process will replace **[myblock]** with **&lt;div class=&quot;myblock&quot;&gt;**
 
 You can use this functionality to create asides and content formatted in a special way.
+
+## Page breaks
+
+Markdown has no knowledge of pages or page breaks. But you can use **page-break-** CSS to control them.
+
+You can tackle the issue in two different ways.
+
+- specifically request page breaks where needed (not recommended)
+- define places where you don't want a page break, and let the normal flow find the right spots
+
+For the first method, you can could use custom tags in your markdown like this:
+
+	[page-break/]
+
+Then you just need to add some CSS like this:
+
+	div.page-break{
+		page-break-after:always;
+	}
+
+My preferred approach is to let the content flow naturally between pages, and only avoid page breaks where they shouldn't be.
+The CV provided as example uses this trick.
+
+	[block]
+	
+	** Some content here
+		
+	[/block]
+
+Then this line of CSS ensure everything in the block will hang together:
+
+
+	p, li, .block, .aside{
+		page-break-inside:avoid;
+	}
 
 
