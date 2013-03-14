@@ -4,6 +4,8 @@ Markdown CV is an attempt to write CVs using Markdown syntax, versioned using Gi
 
 **Warning: I wrote this code just for my personal use. Feel free to use it, but don't expect it to be well tested or even near to a beta version.** 
 
+I wrote a blog post about why I wrote it: http://bitlyfied.com/2013/03/14/markdown-cv/
+
 ## Install
 
 ### Install GEM dependencies:
